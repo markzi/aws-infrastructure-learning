@@ -8,11 +8,6 @@ variable "aws_region" {
   description = "The AWS region the resources will be created in"
 }
 
-variable "sns_subscription_email_address_list" {
-   type = list(string)
-   description = "List of email addresses"
- }
- 
  variable "sns_subscription_protocol" {
    type = string
    default = "email"
