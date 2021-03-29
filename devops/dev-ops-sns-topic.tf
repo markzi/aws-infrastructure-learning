@@ -1,9 +1,3 @@
-data "aws_caller_identity" "current" {}
-
-output "account_id" {
-  value = data.aws_caller_identity.current.account_id
-}
-
 data "template_file" "aws_cf_sns_stack" {
   template = file("${path.module}/templates/cf_aws_sns_email_stack.json.tpl")
   vars = {
