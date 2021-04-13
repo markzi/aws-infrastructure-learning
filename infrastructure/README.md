@@ -37,10 +37,9 @@ terraform init
 ```
 terraform \
   plan --out default.plan \
-  -var="aws_profile=<your aws cli profile>" \
-  -var="aws_region=<your aws cli region>"
+  -var="aws_profile=<your aws cli profile>"
 
-terraform plan --out default.plan -var="aws_profile=dev" -var="aws_region=eu-west-2"
+terraform plan --out default.plan -var="aws_profile=dev"
 ```
 
 #### Apply
@@ -48,8 +47,7 @@ terraform plan --out default.plan -var="aws_profile=dev" -var="aws_region=eu-wes
 ```
 terraform \
   apply \
-  -var="aws_profile=<your aws cli profile>" \
-  -var="aws_region=<your aws cli region>"
+  -var="aws_profile=<your aws cli profile>"
   
 terraform apply "default.plan"
 ```
@@ -59,7 +57,6 @@ terraform apply "default.plan"
 ```
 terraform \
   destroy \
-  -var="aws_profile=<your aws cli profile>" \
-  -var="aws_region=<your aws cli region>"
+  -var="aws_profile=<your aws cli profile>"
   
 ```

@@ -8,7 +8,7 @@ data "template_file" "aws_cf_sns_stack" {
     var.sns_subscription_protocol))
     aws_account_current = data.aws_caller_identity.current.account_id
     aws_account_development = var.aws_account_development
-    region                  = var.aws_region
+    region                  = local.aws_region
   }
 }
 

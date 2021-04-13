@@ -36,3 +36,5 @@ terraform.rc
 HELP.md
 
 **/*.plan
+
+**/jenkins_home

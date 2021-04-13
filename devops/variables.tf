@@ -3,11 +3,6 @@ variable "aws_profile" {
   description = "The AWS profile to use when running terraform commands"
 }
 
-variable "aws_region" {
-  type        = string
-  description = "The AWS region the resources will be created in"
-}
-
 variable "aws_account_development" {
   type        = string
   description = "The AWS development account number"

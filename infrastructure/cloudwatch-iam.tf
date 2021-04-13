@@ -1,4 +1,4 @@
-resource "aws_iam_role" "vpc_flow_logs_role" {
+resource "aws_iam_role" "vpc-flow-logs-role" {
   name = "flow_logs_role"
 
   assume_role_policy = <<EOF
@@ -18,9 +18,9 @@ resource "aws_iam_role" "vpc_flow_logs_role" {
 EOF
 }
 
-resource "aws_iam_role_policy" "cloudwatch_role_policy" {
+resource "aws_iam_role_policy" "cloudwatch-vpc-flow-log-role-policy" {
   name = "cloudwatch_role_policy"
-  role = aws_iam_role.vpc_flow_logs_role.id
+  role = aws_iam_role.vpc-flow-logs-role.id
 
   policy = <<EOF
 {
